@@ -142,6 +142,7 @@ The dataset consists of multiple related tables covering orders, customers, prod
 ## 🔬Explore Dataset with SQL Server
 - Load data into Database in SQL Server and query the important insight.
 - Aggregate data by sales, products, stores, customer.
+
 [All SQL query file into SQL data analysis folder](./SQL_data_analysis/)
 
 ---
@@ -161,9 +162,15 @@ Used `scikit-learn`, `KMeans`, `XGBoost`.
 
 ### Churn Prediction (Updating...)
 
-- Features: Recency, Frequency, Monetary Value (RFM), Demographics  
-- Model: XGBoost Classifier  
-- Evaluation: Accuracy, ROC-AUC
+- Features: Recency, Frequency(Total_Orders), Monetary(Total_Sales) Value, Total_Quantity, Total_Products, Age, Recency Avg_Order_Value, Avg_Monthly_Spend. 
+- Model: Random Forest & XGBoost Classifier.
+- Evaluation: 
+  - **Random Forest Model** with Recency Value.
+    - Accuracy & ROC-AUC = 1.
+  - **XGBoost Classifier** without Recency Value.
+    - Accuracy = 0.77 (Low)
+    - ROC-AUC - 0.68 (Low)
+- Result: **Recency** is the most important factor impact to Churn Prediction Model.
 
 ### Recommendation Systems (Updating...)
 
@@ -192,7 +199,7 @@ Interactive dashboards built using:
   -  Store Dashboard:
     ![Overview](./image/StoreDashboard.png)
 
--  Customer Dashboard:
+  -  Customer Dashboard:
     ![Overview](./image/CustomerDashboard.png)
 
 ---
