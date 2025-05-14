@@ -156,12 +156,15 @@ Used `scikit-learn`, `KMeans`, `XGBoost`.
 ### Customer Segmentation Model
 
 [Customer Segmentation](./machine_learning/Customer_Segmetation.ipynb)
+- Object: Group customers by behavior/spending level to personalize marketing strategy.
 - Features: Total Sales, Total Orders, Recency, Average Order Value, etc.  
 - Method: KMeans clustering. 
 - Result: Segmented into Loyal, At-Risk / Low-Value, and High-Value Inactive customers.  
 
-### Churn Prediction (Updating...)
+### Churn Prediction
 
+[Churn Predition](./machine_learning/Churn_Prediction.ipynb)
+- Object: Identify customers at risk of leaving to find retention solutions.
 - Features: Recency, Frequency(Total_Orders), Monetary(Total_Sales) Value, Total_Quantity, Total_Products, Age, Recency Avg_Order_Value, Avg_Monthly_Spend. 
 - Model: Random Forest & XGBoost Classifier.
 - Evaluation: 
@@ -174,6 +177,10 @@ Used `scikit-learn`, `KMeans`, `XGBoost`.
 
 ### Recommendation Systems (Updating...)
 
+- Object: Increase revenue, improve customer experience by:
+  - Suggesting similar products (based on viewed/purchased products).
+  - Suggesting products for each customer (personalization).
+  - Suggesting cross-sell or up-sell products.
 - Techniques: Collaborative Filtering, Content-Based Filtering  
 - Goal: Recommend electronics products based on purchase history  
 
@@ -201,12 +208,6 @@ Interactive dashboards built using:
 
   -  Customer Dashboard:
     ![Overview](./image/CustomerDashboard.png)
-
----
-
-## ✅ Conclusion
-
-Dưới đây là phần ✅ **Conclusion** chi tiết hơn cho file `README.md` của bạn trong dự án **Global Electronics Retailer**:
 
 ---
 
